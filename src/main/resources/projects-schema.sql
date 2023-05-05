@@ -1,3 +1,4 @@
+CREATE DATABASE projects;
 USE projects; 
 DROP TABLE IF EXISTS material;
 DROP TABLE IF EXISTS step;
@@ -17,7 +18,7 @@ CREATE TABLE project (
 CREATE TABLE material (
   material_id INT AUTO_INCREMENT NOT NULL,
   project_id INT NOT NULL,
-  project_name VARCHAR(128) NOT NULL,
+  material_name VARCHAR(128) NOT NULL,
   num_required INT,
   cost DECIMAL(7,2),
   PRIMARY KEY (material_id),
